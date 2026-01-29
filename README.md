@@ -60,15 +60,7 @@ bash test.sh
 
 - Note that `--seq_len` is to set the sequence length for evaluation. `--context_size` is to set the context length of the model during fine-tuning.
 
-- We have already tokenized the validation and test splits of PG19 and proof-pile dataset into `pg19/validation.bin`, `pg19/test.bin`, and `proof-pile/test_sampled_data.bin`, with the tokenizer of LLaMA. `proof-pile/test_sampled_data.bin` contains 128 documents that are randomly sampled from the total proof-pile test split. For each document, it has at least 32768 tokens. We also release the sampled ids in [proof-pile/test_sampled_ids.bin](https://drive.google.com/file/d/1cnzWODLRQYAd7HeugzLCIhaqzaLZv7J5/view?usp=share_link). You can download them from the links below.
-
-| Dataset    | Split      | Link                                                                                                         |
-|:-----------|------------|--------------------------------------------------------------------------------------------------------------|
-| PG19       | validation | [pg19/validation.bin](https://drive.google.com/file/d/1rbJvb0qRIf2mQoN2ON7S93TbTzMnlrN6/view?usp=share_link) |
-| PG19       | test       | [pg19/test.bin](https://drive.google.com/file/d/1QANDMdctpacPAYgS04adDXqByGEq-Ret/view?usp=share_link)       |
-| Proof-pile | test       | [proof-pile/test_sampled_data.bin](https://drive.google.com/file/d/1bUI5lPDvrqzY_XXJJ2sSuvZx0Y9AZClE/view?usp=share_link)         |
- 
-
+- We provide tokenized the validation and test splits of PG19 and proof-pile dataset in `data/pg19/validation.bin`, `data/pg19/test.bin`, and `data/proof-pile/test_sampled_data.bin`, with the tokenizer of LLaMA. `data/proof-pile/test_sampled_data.bin` contains 128 documents that are randomly sampled from the total proof-pile test split. For each document, it has at least 32768 tokens. You can also use the sampled ids from [LongLoRA](https://github.com/JIA-Lab-research/LongLoRA)
 ### Downstream taks
 
 We follow instructions of [LongBench](https://github.com/THUDM/LongBench/tree/main/LongBench), [OpenCompass](https://github.com/open-compass/opencompass) and [KVCache-Factory](https://github.com/Zefan-Cai/KVCache-Factory) to evaluate the performance of FreqKV on LongBench, RULER and Needle-in-a-Haystack.
