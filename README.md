@@ -72,7 +72,7 @@ If you find this work useful, please cite:
 ```bibtex
 @article{freqkv2026,
   title     = {FreqKV: Key-Value Compression in Frequency Domain for Context Window Extension},
-  author    = {Jushi Kai, Boyi Zeng, Yixuan Wang, Haoli Bai, Bo Jiang, Ziwei He, Zhouhan Lin},
+  author    = {Jushi Kai, Yixuan Wang, Boyi Zeng, Haoli Bai, Bo Jiang, Ziwei He, Zhouhan Lin},
   journal   = {International Conference on Learning Representations (ICLR)},
   year      = {2026}
 }
