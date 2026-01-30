@@ -1,16 +1,16 @@
-# FreqKV
-
-<p align="center">
-  <img src="pipeline.jpg" width="85%">
-</p>
-
-**FreqKV** is an efficient context extension method that iteratively compresses key-value states in the frequency domain.
+<h1 align="center">FreqKV</h1>
 
 📄 **Paper**:  
 [FreqKV: Key-Value Compression in Frequency Domain for Context Window Extension](https://arxiv.org/abs/2505.00570)
 
 🏆 **Status**:  
 Accepted to **ICLR 2026**
+
+<p align="center">
+  <img src="pipeline.jpg" width="85%">
+</p>
+
+**FreqKV** is an efficient context extension method that iteratively compresses key-value states in the frequency domain.
 
 ## Setup
 
