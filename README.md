@@ -61,7 +61,8 @@ bash test.sh
 - Note that `--seq_len` is to set the sequence length for evaluation. `--context_size` is to set the context length of the model during fine-tuning.
 
 - We provide tokenized the validation and test splits of PG19 and proof-pile dataset in `data/pg19/validation.bin`, `data/pg19/test.bin`, and `data/proof-pile/test_sampled_data.bin`, with the tokenizer of LLaMA. `data/proof-pile/test_sampled_data.bin` contains 128 documents that are randomly sampled from the total proof-pile test split. For each document, it has at least 32768 tokens. You can also use the sampled ids from [LongLoRA](https://github.com/JIA-Lab-research/LongLoRA)
-### Downstream taks
+
+### Downstream tasks
 
 We follow instructions of [LongBench](https://github.com/THUDM/LongBench/tree/main/LongBench), [OpenCompass](https://github.com/open-compass/opencompass) and [KVCache-Factory](https://github.com/Zefan-Cai/KVCache-Factory) to evaluate the performance of FreqKV on LongBench, RULER and Needle-in-a-Haystack.
 
